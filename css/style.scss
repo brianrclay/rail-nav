@@ -116,26 +116,6 @@ body {
     font-family: 'Inter', sans-serif;
     color: $gray-80;
     overflow: hidden;
-
-    .tippy-box {
-        display: none;
-    }
-
-    &.nav-collapsed {
-        .tippy-box {
-            display: block;
-        }
-
-        .expand-border {
-            &:hover {
-                cursor: e-resize;
-            }
-        }
-
-        .page-wrapper {
-            width: 100vw;
-        }
-    }
 }
 
 a {
@@ -295,12 +275,13 @@ button {
         padding: 32px 32px 0;
         display: flex;
         justify-content: center;
-        overflow: auto;
+        overflow-y: overlay;
         height: calc(100vh - 68px);
         box-sizing: border-box;
         
         img{
             max-width: 1400px;
+            width: 100%;
         }
     }
 }

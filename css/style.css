@@ -110,18 +110,6 @@ body {
   color: #292B2D;
   overflow: hidden;
 }
-body .tippy-box {
-  display: none;
-}
-body.nav-collapsed .tippy-box {
-  display: block;
-}
-body.nav-collapsed .expand-border:hover {
-  cursor: e-resize;
-}
-body.nav-collapsed .page-wrapper {
-  width: 100vw;
-}
 
 a {
   text-decoration: none;
@@ -267,12 +255,13 @@ button {
   padding: 32px 32px 0;
   display: flex;
   justify-content: center;
-  overflow: auto;
+  overflow-y: overlay;
   height: calc(100vh - 68px);
   box-sizing: border-box;
 }
 .page-wrapper .page img {
   max-width: 1400px;
+  width: 100%;
 }
 
 .left-nav {
