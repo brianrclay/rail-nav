@@ -108,9 +108,14 @@ h6,
 
 // DEFAULT STYLES
 
+html{
+    overflow: hidden;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: $gray-80;
+    overflow: hidden;
 
     .tippy-box {
         display: none;
@@ -289,8 +294,10 @@ button {
         flex: 1;
         padding: 32px 32px 0;
         display: flex;
-        align-items: center;
         justify-content: center;
+        overflow: auto;
+        height: calc(100vh - 68px);
+        box-sizing: border-box;
         
         img{
             max-width: 1400px;
