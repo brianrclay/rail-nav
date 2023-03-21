@@ -2,18 +2,18 @@
 <html>
 
 <head>
-    <title>Sandbox</title>
+    <title>Security - Corps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="./css/reset.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" /> -->
-    <link href="./css/helpers.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="../css/helpers.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
                     fill="#69767C" />
             </svg>
             <span>Search Fastly</span>
-            <img src="./icons/quick-search.svg" />
+            <img src="../icons/quick-search.svg" />
             <div class="search-menu">
 
             </div>
@@ -92,7 +92,7 @@
                 <ul class="dropdown-menu">
                     <a href="#">
                         <li>
-                            <img src="./icons/ Log out.svg" />
+                            <img src="../icons/ Log out.svg" />
                             <span class="m-r-8">Log out</span>
                         </li>
                     </a>
@@ -100,10 +100,10 @@
             </div>
         </div>
     </nav>
-    <div class="page-wrapper">
+    <div class="page-wrapper sub-page">
         <nav class="left-nav">
             <div class="rail">
-                <a href="" class="rail-item home active">
+                <a href="/" class="rail-item home">
                     <div class="icon-wrapper">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_119_38008" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -135,7 +135,7 @@
                     </div>
                     <span>Network services</span>
                 </a>
-                <a href="/security-corps" class="rail-item" id="security">
+                <a href="" class="rail-item active" id="security">
                     <div class="icon-wrapper">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_119_38011" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -220,7 +220,7 @@
             <!-- nav drawer -->
             <div class="nav-drawer">
                 <!-- Network nav items -->
-                <div class="network-services-items nav-item-wrapper show">
+                <div class="network-services-items nav-item-wrapper">
                     <a href="/cdn-services" class="nav-item">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_119_37945" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -252,7 +252,7 @@
                                 </svg>
                                 <span class="m-l-12">TLS management</span>
                             </div>
-                            <img src="./icons/ Chevron Down.svg">
+                            <img src="../icons/ Chevron Down.svg">
                         </div>
                         <div class="child-wrapper" id="tls-children">
                             <a class="child" href="">Overview</a>
@@ -261,8 +261,8 @@
                     </button>
                 </div>
                 <!-- Security nav items -->
-                <div class="security-items nav-item-wrapper">
-                    <button href="" class="parent" id="tls">
+                <div class="security-items nav-item-wrapper show">
+                    <button href="" class="parent open" id="tls">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -281,10 +281,10 @@
                                 </svg>
                                 <span class="m-l-12">Next-gen WAF</span>
                             </div>
-                            <img src="./icons/ Chevron Down.svg">
+                            <img src="../icons/ Chevron Down.svg">
                         </div>
                         <div class="child-wrapper" id="tls-children">
-                            <a class="child" href="/security-corps">Corp</a>
+                            <a class="child active" href="">Corp</a>
                             <a class="child" href="/security-sites">Sites</a>
                         </div>
                     </button>
@@ -431,9 +431,18 @@
                 </div>
             </div>
         </nav>
-        <main class="page">
+        <main class="page full-width">
+            <div class="page-nav">
+                <div class="left">
+                    <img src="../images/switcher.png">
+                </div>
+                <div class="right">
+                    <img src="../images/tabs.png">
+                </div>
+
+            </div>
             <div class="img-wrapper">
-                <img src="./images/home.png">
+                <img src="../images/crops.png">
             </div>
         </main>
     </div>
@@ -441,7 +450,7 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script> -->
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

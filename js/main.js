@@ -42,17 +42,74 @@ $('.parent').click(function(){
 })
 
 // Show nav drawer on hover
+var menuToShow;
+var isSubPage = $('.page-wrapper').hasClass('sub-page');
+var currentMenu = $('.nav-item-wrapper.show');
 
-$('.rail-item:not(.home)').hover(function(){
-    var menuToShow = $(this).attr('id')
-    $('.nav-item-wrapper').delay(1000).removeClass('show');
-    $('.' + menuToShow + '-items').delay(1000).addClass('show');
-    $('.nav-drawer').delay(1000).addClass('show');
-    $(this).delay(1000).addClass('showing-menu');
-    $(this).delay(1000).siblings().removeClass('showing-menu');
-});
+if(!isSubPage){
+    // home page
+    function showNav(target) {
+        menuToShow = $(target).attr('id')
+        $('.nav-item-wrapper').removeClass('show');
+        $('.' + menuToShow + '-items').addClass('show');
+        $('.nav-drawer').addClass('show');
+        $(target).addClass('showing-menu');
+        $(target).siblings().removeClass('showing-menu');
+        console.log(target)
+    }
+    
+    $('.rail-item:not(.home)').mouseenter(function(){
+        var target = $(this);
+        showNav(target)
+    });
+    
+    $('.left-nav').mouseleave(function(){
+        $('.nav-drawer').removeClass('show');
+        $('.rail-item').removeClass('showing-menu');
+    });
+} else {
+    // sub-page larger than 1600px
+    var windowWidth = $( window ).width();
+    if(windowWidth > 1600){
+        function showNav(target) {
+            menuToShow = $(target).attr('id')
+            $('.nav-item-wrapper').removeClass('show');
+            $('.' + menuToShow + '-items').addClass('show');
+            $('.nav-drawer').addClass('show');
+            $(target).addClass('showing-menu');
+            $(target).siblings().removeClass('showing-menu');
+        }
+        
+        $('.rail-item:not(.home)').mouseenter(function(){
+            var target = $(this);
+            showNav(target)
+        });
 
-$('.left-nav').mouseleave(function(){
-    $('.nav-drawer').removeClass('show');
-    $('.rail-item').removeClass('showing-menu');
-});
+        $('.left-nav').mouseleave(function(){
+            $('.nav-item-wrapper').removeClass('show');
+            currentMenu.addClass('show');
+            $('.rail-item').removeClass('showing-menu');
+        });
+    } else {
+        // sub-page smaller than 1600px
+        function showNav(target) {
+            menuToShow = $(target).attr('id')
+            $('.nav-item-wrapper').removeClass('show');
+            $('.' + menuToShow + '-items').addClass('show');
+            $('.nav-drawer').addClass('show');
+            $(target).addClass('showing-menu');
+            $(target).siblings().removeClass('showing-menu');
+            console.log(target)
+        }
+        
+        $('.rail-item:not(.home)').mouseenter(function(){
+            var target = $(this);
+            showNav(target)
+        });
+        
+        $('.left-nav').mouseleave(function(){
+            $('.nav-drawer').removeClass('show');
+            $('.rail-item').removeClass('showing-menu');
+        });
+    }
+}

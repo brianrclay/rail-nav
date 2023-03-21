@@ -153,6 +153,8 @@ button {
 	border-radius: 3px;
 	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 	background-clip: padding-box;
+    transform: translateX(-132px);
+    
 	a {
 		text-decoration: none;
 		li {
@@ -286,12 +288,14 @@ button {
     }
 }
 
+
 // left nav
 .left-nav{
     width: 94px;
     height: calc(100vh - 68px);
     position: relative;
     box-sizing: border-box;
+    z-index: 2;
 
     .rail{
         width: 94px;
@@ -316,8 +320,20 @@ button {
             color: $gray-80;
             text-align: center;
 
+            &:hover{
+                .icon-wrapper{
+                    background-color: $gray-10;
+                }
+            }
+
             &.active{
                 color: $info-70;
+
+                &:hover{
+                    .icon-wrapper{
+                        background-color: $info-10;
+                    }
+                }
                 .icon-wrapper{
                    background-color: $info-10;
 
@@ -327,13 +343,14 @@ button {
                 }
             }
 
-            &:hover{
-                .icon-wrapper{
-                    background-color: $gray-10;
-                }
-            }
-
             &.showing-menu{
+
+                &.active{
+                    .icon-wrapper{
+                        background-color: $info-10;
+                    }
+                }
+
                 .icon-wrapper{
                     background-color: $gray-10;
                 }
@@ -505,6 +522,60 @@ button {
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .sub-page{
+        .left-nav{
+            width: 350px;
+        }
+    
+        .nav-drawer{
+            left: 94px;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    }
+}
+
+//page nav
+
+.page.full-width{
+    padding: 0;
+    display: block;
+
+    .img-wrapper{
+        max-width: 1400px;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+}
+
+.page-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    height: 64px;
+    background-color: $gray-0;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-20;
+    margin-bottom: 32px;
+    position: sticky;
+    top: 0;
+
+    .left{
+        img{
+            height: 24px;
+        }
+    }
+
+    .right{
+        img{
+            height: 64px;
         }
     }
 }
