@@ -54,6 +54,7 @@ $(".rail-item:not(.home)").mouseenter(function () {
   target = $(this).attr("id");
   menuToShow = $("." + target + "-items");
   railItem = $(this);
+  console.log(target)
 });
 
 function collapseNavDrawer() {
@@ -134,3 +135,29 @@ if (!isSubPage) {
     });
   }
 }
+
+
+// App switcher toggle
+$('.app-switcher-menu > button').click(function(){
+  $('.app-switcher-menu').toggleClass('closed');
+  $('.app-switcher-scrim').toggleClass('open');
+});
+
+$('.app-switcher-scrim').click(function(){
+  $(this).removeClass('open')
+  $('.app-switcher-menu').addClass('closed');
+})
+
+//Site switcher
+
+$('.site-switcher').click(function(){
+  $('.site-switcher-menu').toggleClass('show')
+  $('.site-switcher').toggleClass('open')
+  $('.site-switcher-scrim').toggleClass('open')
+});
+
+$('.site-switcher-scrim').click(function(){
+  $(this).removeClass('open')
+  $('.site-switcher-menu').removeClass('show')
+  $('.site-switcher').removeClass('open')
+})
