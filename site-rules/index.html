@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Security - Sites</title>
+    <title>Security - Site settings</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/reset.css" rel="stylesheet">
@@ -165,7 +165,7 @@
     <div class="page-wrapper sub-page">
         <nav class="left-nav">
             <div class="rail">
-                <a href="/corp-overview" class="rail-item active" id="sigsci-corp">
+                <a href="/corp-overview" class="rail-item" id="sigsci-corp">
                     <div class="icon-wrapper">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_119_38008" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -181,7 +181,7 @@
                     </div>
                     <span>Corp</span>
                 </a>
-                <a href="/site-overview" class="rail-item" id="sigsci-sites">
+                <a href="/site-overview" class="rail-item active" id="sigsci-sites">
                     <div class="icon-wrapper">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -205,7 +205,7 @@
             <!-- nav drawer -->
             <div class="nav-drawer">
                 <!-- Corp nav items -->
-                <div class="sigsci-corp-items nav-item-wrapper show">
+                <div class="sigsci-corp-items nav-item-wrapper">
                     <a href="" class="nav-item">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 16V8H7V16H4ZM8.5 16V4H11.5V16H8.5ZM13 16V10H16V16H13Z" fill="#3A4245" />
@@ -231,7 +231,7 @@
                             <a class="child" href="">Corp signals</a>
                         </div>
                     </button>
-                    <button href="" class="parent open" id="corp-menu">
+                    <button href="" class="parent" id="corp-menu">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -246,7 +246,7 @@
                             <img src="../icons/ Chevron Down.svg">
                         </div>
                         <div class="child-wrapper" id="tls-children">
-                            <a class="child active" href="/all-sites">Sites</a>
+                            <a class="child" href="/all-sites">Sites</a>
                             <a class="child" href="">Corp users</a>
                             <a class="child" href="">User authentication</a>
                             <a class="child" href="">API access tokens</a>
@@ -259,7 +259,7 @@
                     </button>
                 </div>
                 <!-- Sites nav items -->
-                <div class="sigsci-sites-items nav-item-wrapper">
+                <div class="sigsci-sites-items nav-item-wrapper show">
                     <a href="/site-overview" class="nav-item">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -321,7 +321,7 @@
                             <a class="child" href="">Signals dashboards</a>
                         </div>
                     </button>
-                    <button href="" class="parent" id="corp-menu">
+                    <button href="" class="parent open" id="corp-menu">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -335,7 +335,7 @@
                             <img src="../icons/ Chevron Down.svg">
                         </div>
                         <div class="child-wrapper" id="tls-children">
-                            <a class="child" href="/site-rules">Site rules</a>
+                            <a class="child active" href="/site-rules">Site rules</a>
                             <a class="child" href="">Templated rules</a>
                             <a class="child" href="">Advanced rules</a>
                             <a class="child" href="">Site lists</a>
@@ -359,7 +359,7 @@
                             <img src="../icons/ Chevron Down.svg">
                         </div>
                         <div class="child-wrapper" id="tls-children">
-                            <a class="child" href="/site-settings">Site settings</a>
+                            <a class="child active" href="/site-settings">Site settings</a>
                             <a class="child" href="">Header links</a>
                             <a class="child" href="">Site integrations</a>
                             <a class="child" href="">Site audit log</a>
@@ -396,9 +396,7 @@
         </nav>
         <main class="page">
             <div class="img-wrapper">
-                <a href="/site-settings">
-                    <img src="../images/all-sites.png">
-                </a>
+                <img src="../images/site-rules.png">
             </div>
         </main>
     </div>

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Service summary</title>
+    <title>Billing - Invoices</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/reset.css" rel="stylesheet">
@@ -14,7 +14,7 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" /> -->
     <link href="../css/helpers.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="/icons/sigsci-logo-mark.svg">
+<link rel="icon" type="image/x-icon" href="/icons/fastly-logo-mark.svg">
 </head>
 
 <body>
@@ -174,7 +174,7 @@
                     </div>
                     <span>Home</span>
                 </a>
-                <a href="" class="rail-item active" id="network-services">
+                <a href="" class="rail-item" id="network-services">
                     <div class="icon-wrapper">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_119_38009" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -255,7 +255,7 @@
                     </div>
                     <span>Resources</span>
                 </a>
-                <a href="" class="rail-item" id="account">
+                <a href="" class="rail-item active" id="account">
                     <div class="icon-wrapper">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_133_38069" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -275,8 +275,8 @@
             <!-- nav drawer -->
             <div class="nav-drawer">
                 <!-- Network nav items -->
-                <div class="network-services-items nav-item-wrapper show">
-                    <button href="" class="parent open" id="tls">
+                <div class="network-services-items nav-item-wrapper">
+                    <button href="" class="parent" id="tls">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -296,7 +296,7 @@
                         </div>
                         <div class="child-wrapper" id="tls-children">
                             <a class="child" href="/cdn-services">All services</a>
-                            <a class="child active" href="/service-summary">Service summary</a>
+                            <a class="child" href="/service-summary">Service summary</a>
                             <a class="child" href="/service-configuration">Service configuration</a>
                         </div>
                     </button>
@@ -456,7 +456,7 @@
                     </a>
                 </div>
                 <!-- Account nav items -->
-                <div class="account-items nav-item-wrapper">
+                <div class="account-items nav-item-wrapper show">
                     <a href="" class="nav-item">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_1369_41890" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
@@ -532,7 +532,7 @@
                             </svg>                                                                                
                         <span>Company settings</span>
                     </a>
-                    <button href="" class="parent" id="tls">
+                    <button href="" class="parent open" id="tls">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -543,7 +543,7 @@
                             <img src="../icons/ Chevron Down.svg">
                         </div>
                         <div class="child-wrapper" id="tls-children">
-                            <a class="child" href="/invoices">Invoices</a>
+                            <a class="child active" href="/invoices">Invoices</a>
                             <a class="child" href="">Month-to-date</a>
                             <a class="child" href="">Plan usage</a>
                             <a class="child" href="">Upgrade account</a>
@@ -555,7 +555,7 @@
         </nav>
         <main class="page">
             <div class="img-wrapper">
-                <img src="../images/service-summary.png">
+                <img src="../images/invoices.png">
             </div>
         </main>
     </div>

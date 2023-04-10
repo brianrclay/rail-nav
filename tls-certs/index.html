@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Service summary</title>
+    <title>TLS certificates</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/reset.css" rel="stylesheet">
@@ -14,7 +14,7 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" /> -->
     <link href="../css/helpers.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="/icons/sigsci-logo-mark.svg">
+<link rel="icon" type="image/x-icon" href="/icons/fastly-logo-mark.svg">
 </head>
 
 <body>
@@ -276,7 +276,7 @@
             <div class="nav-drawer">
                 <!-- Network nav items -->
                 <div class="network-services-items nav-item-wrapper show">
-                    <button href="" class="parent open" id="tls">
+                    <button href="" class="parent" id="tls">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -296,11 +296,11 @@
                         </div>
                         <div class="child-wrapper" id="tls-children">
                             <a class="child" href="/cdn-services">All services</a>
-                            <a class="child active" href="/service-summary">Service summary</a>
+                            <a class="child" href="/service-summary">Service summary</a>
                             <a class="child" href="/service-configuration">Service configuration</a>
                         </div>
                     </button>
-                    <button href="" class="parent" id="tls">
+                    <button href="" class="parent open" id="tls">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -321,7 +321,7 @@
                         </div>
                         <div class="child-wrapper" id="tls-children">
                             <a class="child" href="">Overview</a>
-                            <a class="child" href="/tls-settings">Settings</a>
+                            <a class="child active" href="">Settings</a>
                         </div>
                     </button>
                 </div>
@@ -555,7 +555,9 @@
         </nav>
         <main class="page">
             <div class="img-wrapper">
-                <img src="../images/service-summary.png">
+                <a href="/tls-settings">
+                    <img src="../images/tls-certificates.png">
+                </a>
             </div>
         </main>
     </div>
