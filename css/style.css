@@ -507,6 +507,13 @@ button {
 }
 .left-nav .nav-drawer .nav-item span {
   margin-left: 12px;
+  flex: 1;
+}
+.left-nav .nav-drawer .nav-item .external-link {
+  width: 16px;
+  height: 16px;
+  max-width: 16px;
+  max-height: 16px;
 }
 .left-nav .nav-drawer .parent {
   display: flex;

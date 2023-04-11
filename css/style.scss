@@ -572,6 +572,14 @@ button {
 
             span{
                 margin-left: 12px;
+                flex: 1;
+            }
+
+            .external-link{
+                width: 16px;
+                height: 16px;
+                max-width: 16px;
+                max-height: 16px;
             }
         }
 
