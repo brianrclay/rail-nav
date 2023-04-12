@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Service configuration</title>
+    <title>Edge rate limiting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/reset.css" rel="stylesheet">
@@ -174,7 +174,7 @@
                     </div>
                     <span>Home</span>
                 </a>
-                <a href="" class="rail-item active" id="network-services">
+                <a href="" class="rail-item" id="network-services">
                     <div class="icon-wrapper">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_119_38009" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -190,7 +190,7 @@
                     </div>
                     <span>Network services</span>
                 </a>
-                <a href="/edge-rate-limiting" class="rail-item" id="security">
+                <a href="/edge-rate-limiting" class="rail-item active" id="security">
                     <div class="icon-wrapper">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_119_38011" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -275,8 +275,8 @@
             <!-- nav drawer -->
             <div class="nav-drawer">
                 <!-- Network nav items -->
-                <div class="network-services-items nav-item-wrapper show">
-                    <button href="" class="parent open" id="tls">
+                <div class="network-services-items nav-item-wrapper">
+                    <button href="" class="parent" id="tls">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -297,7 +297,7 @@
                         <div class="child-wrapper" id="tls-children">
                             <a class="child" href="/cdn-services">All services</a>
                             <a class="child" href="/service-summary">Service summary</a>
-                            <a class="child active" href="/service-configuration">Service configuration</a>
+                            <a class="child" href="/service-configuration">Service configuration</a>
                         </div>
                     </button>
                     <button href="" class="parent" id="tls">
@@ -326,8 +326,8 @@
                     </button>
                 </div>
                 <!-- Security nav items -->
-                <div class="security-items nav-item-wrapper">
-                    <a href="/edge-rate-limiting" class="nav-item">
+                <div class="security-items nav-item-wrapper show">
+                    <a href="/edge-rate-limiting" class="nav-item active">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_1001_90668" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
                                 width="20" height="20">
@@ -648,7 +648,7 @@
         </nav>
         <main class="page">
             <div class="img-wrapper">
-                <img src="../images/service-config.png">
+                <img src="../images/edge-rate.png">
             </div>
         </main>
     </div>

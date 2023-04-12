@@ -709,4 +709,13 @@ button {
 }
 .site-switcher-menu a svg {
   display: none;
+}
+
+.beta-tag {
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 50px;
+  border: 1px solid #292B2D;
+  color: #292B2D;
+  padding: 0 8px;
 }/*# sourceMappingURL=style.css.map */

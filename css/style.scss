@@ -817,3 +817,12 @@ button {
         }
     }
 }
+
+.beta-tag{
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 50px;
+    border: 1px solid $gray-80;
+    color: $gray-80;
+    padding: 0 8px;
+}
