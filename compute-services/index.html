@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Service configuration</title>
+    <title>TLS domains</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/reset.css" rel="stylesheet">
@@ -174,7 +174,7 @@
                     </div>
                     <span>Home</span>
                 </a>
-                <a href="" class="rail-item active" id="network-services">
+                <a href="" class="rail-item" id="network-services">
                     <div class="icon-wrapper">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_119_38009" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -206,7 +206,7 @@
                     </div>
                     <span>Security</span>
                 </a>
-                <a href="/compute-services" class="rail-item" id="compute">
+                <a href="/compute-services" class="rail-item active" id="compute">
                     <div class="icon-wrapper">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_119_38010" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -275,8 +275,8 @@
             <!-- nav drawer -->
             <div class="nav-drawer">
                 <!-- Network nav items -->
-                <div class="network-services-items nav-item-wrapper show">
-                    <button href="" class="parent open" id="tls">
+                <div class="network-services-items nav-item-wrapper">
+                    <button href="" class="parent" id="tls">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -297,7 +297,7 @@
                         <div class="child-wrapper" id="tls-children">
                             <a class="child" href="/cdn-services">All services</a>
                             <a class="child" href="/service-summary">Service summary</a>
-                            <a class="child active" href="/service-configuration">Service configuration</a>
+                            <a class="child" href="/service-configuration">Service configuration</a>
                         </div>
                     </button>
                     <button href="" class="parent" id="tls">
@@ -321,7 +321,7 @@
                         </div>
                         <div class="child-wrapper" id="tls-children">
                             <a class="child" href="">Overview</a>
-                            <a class="child" href="/tls-settings">Settings</a>
+                            <a class="child" href="">Settings</a>
                         </div>
                     </button>
                 </div>
@@ -374,8 +374,8 @@
                     </a>
                 </div>
                 <!-- Compute nav items -->
-                <div class="compute-items nav-item-wrapper">
-                    <button href="" class="parent" id="tls">
+                <div class="compute-items nav-item-wrapper show">
+                    <button href="" class="parent open" id="tls">
                         <div class="parent-top">
                             <div class="left flex ai-center">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -391,7 +391,7 @@
                             <img src="../icons/ Chevron Down.svg">
                         </div>
                         <div class="child-wrapper" id="tls-children">
-                            <a class="child" href="/compute-services">All services</a>
+                            <a class="child active" href="/compute-services">All services</a>
                             <a class="child" href="">Service summary</a>
                             <a class="child" href="">Service configuration</a>
                         </div>
@@ -648,7 +648,9 @@
         </nav>
         <main class="page">
             <div class="img-wrapper">
-                <img src="../images/add-domain.png">
+                <!-- <a href="/tls-certs"> -->
+                    <img src="../images/compute-services.png">
+                <!-- </a> -->
             </div>
         </main>
     </div>
