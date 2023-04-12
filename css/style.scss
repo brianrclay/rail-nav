@@ -826,3 +826,17 @@ button {
     color: $gray-80;
     padding: 0 8px;
 }
+
+.img-wrapper{
+    position: relative;
+
+    .floating-link{
+        position: absolute;
+        background-color: $gray-20;
+        opacity: 0%;
+        width: 200px;
+        height: 36px;
+        top: 0;
+        right: 0;
+    }
+}

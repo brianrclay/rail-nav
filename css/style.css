@@ -718,4 +718,17 @@ button {
   border: 1px solid #292B2D;
   color: #292B2D;
   padding: 0 8px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+.img-wrapper .floating-link {
+  position: absolute;
+  background-color: #DFE1E3;
+  opacity: 0%;
+  width: 200px;
+  height: 36px;
+  top: 0;
+  right: 0;
 }/*# sourceMappingURL=style.css.map */
