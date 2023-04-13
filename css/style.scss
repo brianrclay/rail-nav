@@ -443,10 +443,12 @@ button {
         border-right: 1px solid $gray-20;
         height: 100%;
         z-index: 2;
-        padding: 16px 0;
+        padding: 16px 0 40px;
         background-color: $gray-0;
         position: absolute;
         z-index: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
 
         .rail-item{
             display: flex;
@@ -518,6 +520,8 @@ button {
         padding: 4px 0;
         transition: $transition;
         background-color: $gray-0;
+        overflow-y: auto;
+        overflow-x: hidden;
 
         &.show{
             visibility: visible;
@@ -533,12 +537,23 @@ button {
             pointer-events: none;
             position: absolute;
 
+            .nav-item, .parent, .child{
+                position: absolute;
+                height: 0;
+            }
+
             &.show{
                 opacity: 1;
                 visibility: visible;
                 height: auto;
                 pointer-events: auto;
                 position: relative;
+                top: 0;
+
+                .nav-item, .parent, .child{
+                    position: relative;
+                    height: auto;
+                }
             }
         }
 
