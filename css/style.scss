@@ -855,3 +855,37 @@ button {
         right: 0;
     }
 }
+
+.wip{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    padding: 0 40px;
+    top: 0;
+    left: 0;
+
+    button{
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        cursor: pointer;
+    }
+
+    a{
+        color: $gray-0;
+        padding: 8px 16px;
+        border-radius: 4px;
+        background-color: $info-70;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        margin: 24px 0 0;
+    }
+}

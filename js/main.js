@@ -161,3 +161,7 @@ $('.site-switcher-scrim').click(function(){
   $('.site-switcher-menu').removeClass('show')
   $('.site-switcher').removeClass('open')
 })
+
+$('.close-wip').click(function(){
+  $('.wip').remove()
+})
